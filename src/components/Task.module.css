@@ -75,3 +75,50 @@
 .labelTarefasConcluidas {
   color: var(--purple-100);
 }
+
+.taskList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.75rem ;
+  height: 4.5rem;
+  padding: 1rem;
+  background: var(--gray-500) ;
+  border: 1px solid var(--gray-300);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.taskList + .taskList {
+  margin-top: 0.75rem;
+}
+
+.doneTask {
+  border-radius: 50%;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--blue-100);
+}
+
+.taskList button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;;
+}
+
+.doneTask:checked {
+  background: var(--purple-100);
+  color: var(--gray-100);
+}
+
+
+.doneTask:checked::after{
+  content: '\2713';
+  font-size: 12px;
+  margin-left: 3px;
+  color: white;
+  display: flex;
+}
