@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  border-top: 1px solid var(--gray-400);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main img {
+  margin-top: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.main span  strong{
+  color: var(--gray-300);
+}
