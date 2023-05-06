@@ -48,6 +48,8 @@ export function Task() {
     setTasks(newTasks);
   }
 
+  const doneTasks = tasks.filter((t) => t.isChecked)
+
 
   return (
     <div className={styles.container}>
@@ -66,11 +68,15 @@ export function Task() {
           </div>
           <div className={styles.headerControlTasks}>
             <span className={styles.labelTarefasConcluidas}>Concluídas</span>
-            <small>{tasks.filter((t) => t.isChecked).length}</small>
+            <small>{doneTasks.length}</small>
           </div>
         </header>
+
+        {
+          tasks.length == 0 && <NoTask/>
+        }
         
-          { tasks.map((task) => (
+          { tasks.length> 0  &&  tasks.map((task) => (
             <main key={task.text} className={styles.taskList}>
               <input 
                 type="checkbox"
