@@ -10,8 +10,12 @@ TodoList é um simples gerenciador de tarefas diárias desenvolvido com React. C
 - Interface simples e intuitiva
 
 ## Como usar
+Para começar, basta seguir os seguintes passos:
 
-Para começar, basta acessar o site do TodoList e começar a adicionar suas tarefas. Você pode marcar as tarefas como concluídas clicando no botão correspondente ou removê-las completamente da lista.
+1. Clone o repositório para o seu computador: ```git clone https://github.com/seu-usuario/focusbuddy.git```
+2.  Acesse o diretório do projeto:  ```cd FocusBuddy```
+3. Instale as dependências do projeto: ```npm install```
+4. Inicie o servidor de desenvolvimento: ```localhost:5173```
 
 ## Tecnologias usadas
 
